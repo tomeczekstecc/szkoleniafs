@@ -1,12 +1,19 @@
 const express = require("express");
-
+const connectDB = require("./config/db");
 const app = express();
+
+//connect database
+connectDB();
 
 app.get("/", (req, res) => {
   res.json({
     msg: "Welcome to szkoleniaFS"
   });
 });
+
+
+//init middleware
+app.use(express.json({ extended: false }));
 
 //define routes
 app.use("/api/users", require("./routes/users"));

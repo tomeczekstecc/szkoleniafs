@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://admin:1NwShBmeZ3pRlesM@szkoleniafs-cluster0-fzpco.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}
